@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do 0 ao Programador</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/resposive.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Fundo Mágico</h1>
+        <p class="subtitle">Transforme suas ideias em backgrounds incriveis com o poder da IA, descreva o que quer e o
+            resta sera feito.</p>
+    </header>
+    <main class="container">
+        <section class="card main-card">
+            <h2 class="card-header">Descreva o Background que você deseja</h2>
+            <form class="form-group">
+                <textarea id="description" placeholder="Ex: Um gradiente azul e rosa suavemente alterado para o roxo"
+                    rows="5"></textarea>
+                <button id="generate-btn" class="btn-magic"><span id="btn-text">Gerar Background Mágico</span></button>
+            </form>
+        </section>
+        <section id="preview-section" class="preview-section"></section>
+        <section id="code-output" class="code-grid">
+            <div class="card code-card">
+                <h3 class="code-title">Codigo HTML</h3>
+                <pre id="html-code" class="code-block"></pre>
+            </div>
+            <div class="card code-card">
+                <h3 class="code-title">Codigo CSS</h3>
+                <pre id="css-code" class="code-block"></pre>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
